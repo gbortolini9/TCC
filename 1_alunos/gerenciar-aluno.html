@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style-alunos.css">
+</head>
+<body>
+    <main>
+        <a href="../0_home/index.html" id="voltar-home" class="link">Home</a>
+        <a href="#" id="criar-aluno" class="link">Criar novo aluno</a>
+    </main>
+    <section>
+        <div id="janela-criar-aluno">
+            <div id="new-aluno">
+                <p>Criar novo aluno</p>
+                <input type="number" id="userID" placeholder="ID" disabled>
+                <input type="text" id="userName" placeholder="Nome">
+                <input type="text" id="userDays" placeholder="Dias de treino">
+                <button id="btn-cancelar">Cancelar</button>
+                <button id="btn-adicionar">Adicionar</button>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr> <!-- Table row -->
+                    <th>ID</th> <!-- Table head -->
+                    <th>Nome</th>
+                    <th>Dias</th>
+                    <th>Ações</th>
+                </tr>
+            </thead> 
+            <tbody id="tBody">
+                <tr id="tRow">
+                    <td>1</td>
+                    <td>João Silva</td>
+                    <td>Seg, Ter, Qua</td>
+                    <td>
+                        <a href="#" class="link">Editar</a>
+                        <a href="#" class="link">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="script-aluno.js"></script>
+</body>
+</html>
