@@ -1,7 +1,5 @@
 // Array de Alunos
-let studentsList = [
-    
-];
+let studentsList = [];
 
 // Adicionar dados do estudante criado na tabela
 function populateTable() {
